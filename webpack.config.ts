@@ -58,6 +58,7 @@ import fs from 'fs';
 import path from 'path';
 
 const mode = process.env.NODE_ENV ?? 'development';
+const npm_mode = `${process.env.NPM_ENV}` || ''; // 1就是npm的打包
 const isProduction = mode === 'production';
 const isDevelopment = !isProduction;
 
@@ -66,7 +67,7 @@ const config: Configuration = {
 	entry: {
 		bundle: [
 			...stylesheets,
-			'./src/main.js'
+			npm_mode == '1' ? './src/index.js' : './src/main.js'
 		]
 	},
 	resolve: {
@@ -82,7 +83,10 @@ const config: Configuration = {
 		path: path.resolve(__dirname, 'public/build'),
 		publicPath: '/build/',
 		filename: '[name].js',
-		chunkFilename: '[name].[id].js'
+		chunkFilename: '[name].[id].js',
+		library: 'YylSvelteNpm', //类库名称
+        libraryTarget: 'umd', //类库加载方式
+        umdNamedDefine: true
 	},
 	module: {
 		rules: [

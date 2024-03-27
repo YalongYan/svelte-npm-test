@@ -1,13 +1,14 @@
 {
   "private": false,
-  "version": "1.0.4",
-  "description": "测试npm",
+  "version": "0.0.1",
+  "description": "基于svelte开发npm",
   "author": "yyl",
   "main": "public/build/bundle.js",
-  "name": "yl-svelte-test",
+  "name": "yyl-svelte-npm",
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack",
     "dev": "webpack serve",
+    "build": "cross-env NODE_ENV=production webpack",
+    "build-npm": "cross-env NODE_ENV=production NPM_ENV=1 webpack",
     "start": "serve public --listen 8080",
     "validate": "svelte-check"
   },
