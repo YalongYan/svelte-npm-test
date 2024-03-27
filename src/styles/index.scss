@@ -1,0 +1,27 @@
+@use "sass:math"; 
+
+//默认设计稿的宽度
+$designWidth: 750;
+
+//默认设计稿的高度
+$designHeight: 1624;
+ 
+//px转为vw的函数
+@function vw($px) {
+  @return math.div($px , $designWidth) * 100vw;
+}
+
+//px转为vh的函数
+@function vh($px) {  
+  @return math.div($px , $designHeight) * 100vh;
+}
+
+// 使用 demo
+// .class {
+// 	width: vw(100); 
+// }
+
+// 去掉点击的默认蓝色背景
+*{
+  -webkit-tap-highlight-color:rgba(0,0,0,0);
+}
