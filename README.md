@@ -84,10 +84,12 @@ export default {
 ```
 注意：`<div id="aaaa"></div>` 不能放在一个异步组件里，否则会找不到，导致报错 我这里直接放在里 `index.html` 里了
 如下就是运行的效果，红色框内 就是npm组件：
+
 <img src="https://img2024.cnblogs.com/blog/872412/202403/872412-20240328151559948-1495444542.png" alt="" width="300" height="400">
 ## 在Jquery项目中使用
 ##### 1. 在index.html 中像引用jquery.js 那样引用webpack打包好的js, 如下：
 `<script src="https://abc.com/test/yyl-svelte-npm.js"></script>`
+
 这个`yyl-svelte-npm.js` 就是 打包后的 `bundle.js` 这里只是改了下名字
 
 ##### 2. 具体使用的代码如下：
