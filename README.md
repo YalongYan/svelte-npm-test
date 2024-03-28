@@ -1,5 +1,6 @@
 ## 技术栈 
 svelte、webpack
+
 [svelte 官网](https://svelte.dev/examples/hello-world)
 [webpack 文档地址](https://webpack.docschina.org/concepts/)
 ## 关键步骤
@@ -87,6 +88,8 @@ export default {
 ## 在Jquery项目中使用
 ##### 1. 在index.html 中像引用jquery.js 那样引用webpack打包好的js, 如下：
 `<script src="https://abc.com/test/yyl-svelte-npm.js"></script>`
+这个`yyl-svelte-npm.js` 就是 打包后的 `bundle.js` 这里只是改了下名字
+
 ##### 2. 具体使用的代码如下：
 ```
     const topRow2 = $('#aaaa')[0] // 这里必须加上[0]
