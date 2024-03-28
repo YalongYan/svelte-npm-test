@@ -1,6 +1,6 @@
 {
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "基于svelte开发npm",
   "author": "yyl",
   "main": "public/build/bundle.js",
@@ -12,6 +12,7 @@
     "start": "serve public --listen 8080",
     "validate": "svelte-check"
   },
+  "files": ["./public"],
   "devDependencies": {
     "@babel/core": "^7.23.2",
     "@babel/plugin-transform-runtime": "^7.23.2",
