@@ -86,6 +86,7 @@ export default {
 如下就是运行的效果，红色框内 就是npm组件：
 
 <img src="https://img2024.cnblogs.com/blog/872412/202403/872412-20240328151559948-1495444542.png" alt="" width="300" height="400">
+
 ## 在Jquery项目中使用
 ##### 1. 在index.html 中像引用jquery.js 那样引用webpack打包好的js, 如下：
 `<script src="https://abc.com/test/yyl-svelte-npm.js"></script>`
