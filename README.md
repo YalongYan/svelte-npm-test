@@ -104,6 +104,12 @@ new window.YylSvelteNpm.default({target: document.getElementById('aaaa')});
 ```
 注意：不要忘了 `id` 为 `aaaa`的 `div` 元素
 
+## npm 发布相关命令
+1. npm 官网地址：https://www.npmjs.com/
+2. npm login 登录npm
+3. npm publish 发布到npm仓库
+4. npm who i am 查看当前登录的账号名字
+
 ## 注意点
 1. 记得需要单独引用样式文件，打包后的样式文件跟bundle.js在一块的
 2. 在package.json中添加 "files": ["./public"], 可以限制只把打包的代码上传到npm，避免源码上传和泄露
@@ -111,3 +117,4 @@ new window.YylSvelteNpm.default({target: document.getElementById('aaaa')});
 ## 总结
 1. 使用svelte webpack生成umd 规范的npm 可以在不同框架之间公用，可以提高开发效率
 2. svelte本身相比vue、react会更轻量化，打包后的产物代码量更少而且还没有使用vdom，运行效率也会更高
+
