@@ -1,7 +1,11 @@
+## 目标
+基于svelte webpack开发umd格式的npm包
+
 ## 技术栈 
 svelte、webpack
 
 [svelte 官网](https://svelte.dev/examples/hello-world)
+
 [webpack 文档地址](https://webpack.docschina.org/concepts/)
 ## 关键步骤
 #### 一、创建index.js 
